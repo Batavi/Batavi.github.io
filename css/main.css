@@ -1,0 +1,270 @@
+body{
+  color: #33ff66;
+  opacity: 50%;
+  margin-bottom: 100vh;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+h1{
+  font-family: monospace;
+  color: #33ff66;
+  text-shadow: 0 0 20px #33ff66;
+}
+h1:hover{
+  font-family: monospace;
+  color: #00fffa;
+  text-shadow: 0 0 20px #33ff66;
+
+}
+.moduleheading{
+  font-family: monospace;
+  position: relative;
+  padding: 0px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 0px;
+}
+
+.module{
+  text-shadow: 0 0 10px #33ff66;
+  color: #33ff66;
+  outline: 2px solid #33ff66;
+  width: 50vw;
+  height: 5vw;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: black;
+  word-wrap: break-word;
+  background-size: cover;
+}
+
+.module:hover{
+  outline: 2px solid #33ff66;
+  color: black;
+  width: 53vw;
+  height: 5vw;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.moduleimage{
+  width:  5vw;
+  height: 5vw;
+  position: relative;
+  float: left;
+  padding-right: 10px;
+  object-fit: cover;
+}
+
+.moduletext{
+  width: 50vw;
+  position: relative;
+  text-align: left;
+  font-family: monospace;
+}
+
+.css-typing
+{   font-family: monospace;
+    width: 60em;
+    white-space:nowrap;
+    overflow:hidden;
+    animation: type 1s steps(100, end);
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+.css-lines
+{   font-family: monospace;
+    height: 60em;
+    white-space:nowrap;
+    overflow:hidden;
+    animation: scroll 1s steps(100, end);
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes scroll{
+    from { height: 0; }
+}
+
+.blink {
+   font-family: monospace;
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.flicker {
+   font-family: monospace;
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  41% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  44% {
+    opacity: 1;
+  }
+  69% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  72% {
+    opacity: 0;
+  }
+  73% {
+    opacity: 1;
+  }
+  74% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  76% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.loadingicon{
+  margin-top: 30vh;
+  height: 200px;
+  width: 200px;
+  z-index: 999;
+}
+
+.loadingtext1{
+  text-shadow: 0 0 6px #33ff66;
+  font-family: monospace;
+  left: 48.6vw;
+  display: block;
+  position: fixed;
+  z-index: -3
+  font-family: monospace;
+ animation: changeText1 1s infinite linear;
+}
+
+@keyframes changeText1 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loadingtext2{
+  text-shadow: 0 0 3px #33ff66;
+  font-family: monospace;
+  display: block;
+  position: fixed;
+  left: 47.7vw;
+  z-index: 5
+  font-family: monospace;
+ animation: changeText2 1s infinite linear;
+}
+
+@keyframes changeText2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.overlay{
+    background-color:#ccc;
+    width:110vw;
+    height:110vh;
+    background-size: cover;
+    top:0px;
+    left:0px;
+    z-index:-1000;
+    overflow: hidden;
+    border: 0;
+    pointer-events: none;
+}
+
+.fadein{
+  animation: loadinlate 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loadinlate {
+  0% {
+    filter: brightness(0);
+  }
+  85% {
+    filter: brightness(0);
+  }
+  90% {
+    filter: brightness(100);
+  }
+}
+
+.garbagetext{
+  font-family: monospace;
+  animation: loadinlate 0.1s;
+}
+@keyframes loadinlate {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 10;
+  }
